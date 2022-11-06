@@ -1,0 +1,243 @@
+
+:root {
+  --primary: #141414;
+  --light: #F3F3F3;
+  --dark: 	#686868;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  scroll-behavior:auto;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+  position: fixed;
+}
+.lista{
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+  position: fixed;
+}
+
+.header-menu{
+  display: none;
+  padding-bottom: 10px;
+  animation: header_menu_active 2s;
+}
+@keyframes header_menu_active {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.header-btn{
+
+  background-color:#141414 ;
+  font-size: 10px;
+  color: white;
+  height: 40px;
+}
+.logo{
+display: flex;
+
+
+}
+
+.logo:hoover{
+  cursor: pointer;
+}
+
+.icones {
+  position: absolute;
+  right: 60px;
+  top: 0px;
+
+}
+
+li {
+  display: inline;
+}
+
+.icon {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.perfil {
+  width: 30px;
+}
+
+.main-div {
+  display:flex;
+  position: absolute;
+  top: 28px;
+  left: 150px;
+}
+
+.main-div li{
+  text-decoration: none;
+  margin: 5px;
+  color: var(--light);
+  cursor: pointer;
+  
+}
+
+.main-div li:hover {
+  color: var(--dark);
+}
+
+
+.img {
+  display: inline;
+  margin-left: 20px;
+
+}
+
+.thumb:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: ease-in .2s;
+  
+  
+}
+
+.thumb {
+  width: 230px;
+  border-radius: 2px;
+}
+
+.frame {
+  position: flex;
+  top: 70px;
+}
+
+.titulo {
+  color: var(--light);
+  margin-left: 20px;
+}
+
+.frame2 {
+  position: grid;
+  top: 400px;
+}
+
+p {
+  text-align: center;
+  align-content: center;
+  font-size: 10px;
+}
+
+@media(max-width: 700px) {
+
+  header {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "nt nt nt  .  .  . sb . . . "
+    "mn mn mn mn mn mn  mn mn mn mn";
+  }
+
+  .box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+
+  .sub-links ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+
+   
+}
+
+
+@media(max-width: 500px) {
+
+  .wrapper {
+    font-size: 15px;
+  }
+
+  header {
+    margin: 0;
+    padding: 20px 0 0 0;
+    position: static;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "nt"    
+    "mn"
+    "sb";
+    text-align: center;
+  }
+
+  .netflixLogo {
+    max-width: 100%;
+    margin: auto;
+    padding-right: 20px;
+  }
+
+  .main-nav {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+ 
+
+  .box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;    
+  }
+
+  .box a:hover {
+    transition: transform .3s;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);  
+    transform: scale(1.2);
+  }
+
+  .logos {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .sub-links ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+   
+}
+
+
