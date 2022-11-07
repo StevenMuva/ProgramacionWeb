@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 14 - Ejercicios</title>
+    <link rel="stylesheet" href="estilocla.css">
+</head>
+
+
+<body>
+
+    <ul id="accordion" class="accordion">
+
+
+
+        <li>
+            <div class="link"><i class="ejercicio1" onclick="ejer1()"></i>Ejercicio 1</div>
+            <ul class="submenu">
+                <div>
+                    Nombre:
+                    <input type="text" id="name"><br />
+                    Edad:
+                    <input type="text" id="age"><br />
+                </div>
+                <input type="button" id="cal1" value="OK"><br /><br />
+                <div id="resultado1"></div>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio2" onclick="ejer2()"></i>Ejercicio 2</div>
+            <ul class="submenu">
+
+                <div>
+
+                    Seleccione la figura geómetrica a la que quieres calcular el área:
+                    <select name="fig" id="figura">
+                        <option value="triangulo">triangulo</option>
+                        <option value="rectangulo">rectangulo</option>
+                        <option value="circulo">circulo</option>
+                    </select><br/><br/>
+
+                    <div>
+                        Si su seleccion es Triangulo, ingrese estos datos<br/>
+                        Base:
+                        <input name="fig" id="basetri"><br/>
+                        Altura:
+                        <input name="fig" id="alturatri"><br/>
+                    </div><br/>
+                    <div>
+                        Si su seleccion es rectangulo, ingrese estos datos<br/>
+                        Base:
+                        <input name="fig" id="baserec"><br/>
+                        Altura:
+                        <input name="fig" id="alturarec"><br/>
+                    </div><br/>
+                    <div>
+                        Si su seleccion es Circulo, ingrese estos datos<br/>
+                        Radio:
+                        <input name="fig" id="radio"><br/>
+                    </div>
+
+                    <input type="button" id="cal2" value="OK"><br /><br />
+                    <div id="resultado2"></div>
+
+                </div>
+
+
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio3" onclick="ejer3()"></i>Ejercicio 3</div>
+            <ul class="submenu">
+
+                Ingresa un número para saber si es par o impar:
+                <input type="text" id="num"><br />
+                <input type="button" id="cal3" value="OK"><br /><br />
+                <div id="resultado3"></div>
+
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio4" onclick="ejer4()"></i>Ejercicio 4</div>
+            <ul class="submenu">
+
+
+                Ingresa un número mayor a 1 para saber si es primo:
+                <input type="text" id="num1"><br />
+
+
+                <input type="button" id="cal4" value="OK"><br /><br />
+                <div id="resultado4"></div>
+            </ul>
+        </li>
+
+        <li>
+            <div class="link"><i class="ejercicio5" onclick="ejer5()"></i>Ejercicio 5</div>
+
+            <ul class="submenu">
+
+                Ingresa el número del cual quiere saber el factorial:
+                <input type="text" id="num2"><br />
+
+
+                <input type="button" id="cal5" value="OK"><br /><br />
+                <div id="resultado5"></div>
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio6" onclick="ejer6()"></i>Ejercicio 6</div>
+            <ul class="submenu">
+
+                Ingresa el número que quiere agregar a la suma:
+                <input type="text" id="suma"><br />
+
+
+                <input type="button" id="cal6" value="OK"><br /><br />
+                <div id="resultado6"></div>
+
+
+
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio7" onclick="ejer7()"></i>Ejercicio 7</div>
+            <ul class="submenu">
+
+                <input type="button" id="cal7" value="OK"><br /><br />
+                Par:
+                <div id="resultado7"></div><br />
+                Impar:
+                <div id="resultado71"></div>
+
+
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio8" onclick="ejer8()"></i>Ejercicio 8</div>
+            <ul class="submenu">
+
+                Ingresa un número de DNI, No puede ser negativo y tiene que contener 8 digitos. La posición de la
+                letra es el resultado del módulo del número introducido entre 23:
+                <input type="text" id="dni"><br />
+
+                <input type="button" id="cal8" value="OK"><br /><br />
+                <div id="resultado8"></div>
+
+
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio9" onclick="ejer9()"></i>Ejercicio 9</div>
+            <ul class="submenu">
+
+                Ingrese una palabra, para conocer cuantas vocales contiene:
+                <input type="text" id="palabra"><br />
+                <input type="button" id="cal9" value="OK"><br /><br />
+                <div id="resultado9"></div>
+
+
+
+
+
+            </ul>
+        </li>
+        <li>
+            <div class="link"><i class="ejercicio10" onclick="ejer10()"></i>Ejercicio 10</div>
+            <ul class="submenu">
+
+                Ingrese un color:
+                <input type="text" id="color"><br />
+                <input type="button" id="cal10" value="OK"><br /><br />
+                <div id="resultado10"></div>
+
+            </ul>
+        </li>
+
+
+
+
+
+
+
+    </ul>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="cla.js"></script>
+    <script src="acordi.js"></script>
+
+
+</body>
+
+</html>
